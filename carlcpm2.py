@@ -113,5 +113,4 @@ class Carlcpm:
         return response_decoded.get("ok")
     
     def disable_engine_damage(self) -> bool:
-        payload = { "account_auth": self.auth_token }
-        
+        payload = { "account_auth": self.auth_token 
