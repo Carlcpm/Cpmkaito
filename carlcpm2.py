@@ -195,14 +195,13 @@ def banner(console):
                                                        
                                                         
                                                          
-    brand_name += "               ██████╗ █████╗ ██████╗ ██╗      ██████╗██████╗ ███╗   ███╗ /n
-    brand_name += "               ██╔════╝██╔══██╗██╔══██╗██║     ██╔════╝██╔══██╗████╗ ████║
-    brand_name += "               ██║     ███████║██████╔╝██║     ██║     ██████╔╝██╔████╔██║
-    brand_name += "               ██║     ██╔══██║██╔══██╗██║     ██║     ██╔═══╝ ██║╚██╔╝██║
-    brand_name += "               ╚██████╗██║  ██║██║  ██║███████╗╚██████╗██║     ██║ ╚═╝ ██║
+    brand_name += "               ██████╗ █████╗ ██████╗ ██╗      ██████╗██████╗ ███╗   ███╗ /n"
+    brand_name += "               ██╔════╝██╔══██╗██╔══██╗██║     ██╔════╝██╔══██╗████╗ ████║ /n"
+    brand_name += "               ██║     ███████║██████╔╝██║     ██║     ██████╔╝██╔████╔██║ /n"
+    brand_name += "               ██║     ██╔══██║██╔══██╗██║     ██║     ██╔═══╝ ██║╚██╔╝██║ /n"
+    brand_name += "               ╚██████╗██║  ██║██║  ██║███████╗╚██████╗██║     ██║ ╚═╝ ██║ /n"
     brand_name += "               ╚═════╝ ╚═════╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝     ╚═╝                                                  ██╔════╝██╔══██╗██╔══██╗██║     ██╔════╝██╔══██╗████╗ ████║                      ██║     ███████║██████╔╝██║     ██║    ██████╔╝██╔████╔██║
-                                                 
-                                                                                                                                                                            \n"                                                  \n"                                   \n                       ░\n"                            
+                                                                                                                                                                                                                            \n"                                                  \n"                                   \n                       ░\n"                            
     colors = [
         "rgb(255,0,0)", "rgb(255,69,0)", "rgb(255,140,0)", "rgb(255,215,0)", "rgb(173,255,47)", 
         "rgb(0,255,0)", "rgb(0,255,255)", "rgb(0,191,255)", "rgb(0,0,255)", "rgb(139,0,255)",
@@ -350,11 +349,11 @@ if __name__ == "__main__":
             print(Colorate.Horizontal(Colors.rainbow, '{31}: Custom Car Brake         2.000'))
             print(Colorate.Horizontal(Colors.rainbow, '{0} : Exit'))
             
-            print(Colorate.Horizontal(Colors.rainbow, '===============[ AIDENPOGI ]==============='))
+            print(Colorate.Horizontal(Colors.rainbow, '===============[ CARLCPMTOOLV1 ]==============='))
             
             service = IntPrompt.ask(f"[bold][?] Select a Service [red][1-{choices[-1]} or 0][/red][/bold]", choices=choices, show_choices=False)
             
-            print(Colorate.Horizontal(Colors.rainbow, '===============[ AIDENPOGI ]==============='))
+            print(Colorate.Horizontal(Colors.rainbow, '===============[ CARLCPMTOOLV1 ]==============='))
             
             if service == 0: # Exit
                 print(Colorate.Horizontal(Colors.rainbow, f'Thank You for using our tool, please join our telegram channel: @{__CHANNEL_USERNAME__}.'))
