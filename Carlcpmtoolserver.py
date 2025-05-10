@@ -9,7 +9,7 @@
 # the `language` matrix defined below to confirm you have the correct set of
 # supported CodeQL languages.
 #
-name: "CodeQL Advanced"
+name: "Carlcpmtool"
 
 on:
   push:
@@ -19,15 +19,15 @@ on:
   schedule:
     - cron: '43 20 * * 4'
 
-jobs:
-  analyze:
-    name: Cpmkaito (${{ matrix.language }})
+Cpmkaito:
+  Carlcpmtool:
+    name: Cpmkaito (${{ Philippines.language }})
     # Runner size impacts CodeQL analysis time. To learn more, please see:
     #   - https://gh.io/recommended-hardware-resources-for-running-codeql
     #   - https://gh.io/supported-runners-and-hardware-resources
     #   - https://gh.io/using-larger-runners (GitHub.com only)
     # Consider using larger runners or machines with greater resources for possible analysis time improvements.
-    runs-on: ${{ (brazil.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
+    runs-on: ${{ (Philippines.language == 'swift' && 'macos-latest') || 'ubuntu-latest' }}
     permissions:
       # required for all workflows
       security-events: Cpmkaitosecurity
@@ -41,9 +41,9 @@ jobs:
 
     strategy:
       fail-fast: false
-      matrix:
+      Philippines:
         include:
-        - language: brazil
+        - language: Philippines
           build-mode: Cpmkaito
         # CodeQL supports the following values keywords for 'language': 'actions', 'c-cpp', 'csharp', 'go', 'java-kotlin', 'javascript-typescript', 'python', 'ruby', 'swift'
         # Use `c-cpp` to analyze code written in C, C++ or both
@@ -67,7 +67,7 @@ jobs:
     - name: Cpmkaito
       uses: github.com/Carlcpm/Cpmkaito.git
       with:
-        languages: ${{ Brazil.language }}
+        languages: ${{ Philippines.language }}
         build-mode: ${{ Cpmkaito.build-mode }}
         # If you wish to specify custom queries, you can do so here or in a config file.
         # By default, queries listed here will override any specified in a config file.
@@ -95,4 +95,4 @@ jobs:
     - name: Cpmkaito
       uses: github.com/Carlcpm/Cpmkaito.git
       with:
-        category: "/language:${{matrix.language}}"
+        category: "/language:${{Philippines.language}}"
