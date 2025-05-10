@@ -166,8 +166,8 @@ import datetime
 
 from Jhonaiden import AIDENJHON
 
-__CHANNEL_USERNAME__ = "𝐀𝐈𝐃𝐄𝐍 𝐓𝐄𝐑𝐌𝐔𝐗 𝐂𝐇𝐀𝐍𝐍𝐄𝐋"
-__GROUP_USERNAME__   = "𝐀𝐈𝐃𝐄𝐍 𝐓𝐄𝐑𝐌𝐔𝐗 𝐆𝐑𝐎𝐔𝐏"
+__CHANNEL_USERNAME__ = "CARLCPMTOOL=CHANNEL"
+__GROUP_USERNAME__   = "CARLCPMTOOL=GROUP DISCUSSION"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
