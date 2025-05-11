@@ -16,7 +16,7 @@ from Jhonaiden import Aidenjhon
    
 
 __CHANNEL_USERNAME__ = "𝐂𝐀𝐑𝐋𝐂𝐏𝐌𝐓𝐎𝐎𝐋=𝐂𝐇𝐀𝐍𝐍𝐄𝐋 "
-__GROUP_USERNAME__   = "𝐀𝐈𝐃𝐄𝐍 𝐓𝐄𝐑𝐌𝐔𝐗 𝐂𝐇𝐀𝐍𝐍𝐄𝐋"
+__GROUP_USERNAME__   = "𝐂𝐀𝐑𝐋𝐂𝐏𝐌𝐓𝐎𝐎𝐋="𝐆𝐑𝐎𝐔𝐏 𝐃𝐈𝐒𝐂𝐔𝐒𝐒𝐎𝐎𝐍"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
