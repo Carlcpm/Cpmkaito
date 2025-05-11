@@ -15,8 +15,8 @@ from Carlcpmtool import Carlcpm
 
    
 
-__CHANNEL_USERNAME__ = "𝐂𝐀𝐑𝐋𝐂𝐏𝐌𝐓𝐎𝐎𝐋=𝐂𝐇𝐀𝐍𝐍𝐄𝐋 "
-__GROUP_USERNAME__   = "𝐂𝐀𝐑𝐋𝐂𝐏𝐌𝐓𝐎𝐎𝐋="𝐆𝐑𝐎𝐔𝐏 𝐃𝐈𝐒𝐂𝐔𝐒𝐒𝐎𝐎𝐍 "
+__CHANNEL_USERNAME__ = "CARLCPMTOOL=CHANNEL"
+__GROUP_USERNAME__   = "CARLCPMTOOl=GROUP DISCUSSION"
 
 def signal_handler(sig, frame):
     print("\n Bye Bye...")
