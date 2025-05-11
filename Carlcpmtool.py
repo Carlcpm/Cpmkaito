@@ -40,7 +40,7 @@ def gradient_text(text, colors):
     return colorful_text
 
 def banner(console):
-    os.system('cls' 
+    os.system('cls')
     brand_name =  "                   ██████╗ █████╗ ██████╗ ██╗      ██████╗██████╗ ███╗   ███╗\n"
     brand_name =  "                   ██╔════╝██╔══██╗██╔══██╗██║     ██╔════╝██╔══██╗████╗  ██║\n"
     brand_name =  "                   ██║     ███████║██████╔╝██║     ██║     ██████╔╝██╔████╔██║\n"
