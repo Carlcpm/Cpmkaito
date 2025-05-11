@@ -40,13 +40,13 @@ def gradient_text(text, colors):
     return colorful_text
 
 def banner(console):
-    os.system('cls')
+    os.system('cls' if os.name == 'nt' else 'clear')
     brand_name =  "                   ██████╗ █████╗ ██████╗ ██╗      ██████╗██████╗ ███╗   ███╗\n"
-    brand_name =  "                   ██╔════╝██╔══██╗██╔══██╗██║     ██╔════╝██╔══██╗████╗  ██║\n"
-    brand_name =  "                   ██║     ███████║██████╔╝██║     ██║     ██████╔╝██╔████╔██║\n"
-    brand_name =  "                   ██║     ██╔══██║██╔══██╗██║     ██║     ██╔═══╝ ██║╚██╔╝██║\n"
-    brand_name =  "                  ╚██████╗██║  ██║██║  ██║███████╗╚██████╗██║     ██║ ╚═╝ ██║\n"
-    brand_name =  "                   ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝     ╚═╝     ╚═╝\n"                                          
+    brand_name +=  "                   ██╔════╝██╔══██╗██╔══██╗██║     ██╔════╝██╔══██╗████╗  ██║\n"
+    brand_name +=  "                   ██║     ███████║██████╔╝██║     ██║     ██████╔╝██╔████╔██║\n"
+    brand_name +=  "                   ██║     ██╔══██║██╔══██╗██║     ██║     ██╔═══╝ ██║╚██╔╝██║\n"
+    brand_name +=  "                  ╚██████╗██║  ██║██║  ██║███████╗╚██████╗██║     ██║ ╚═╝ ██║\n"
+    brand_name +=  "                   ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝     ╚═╝     ╚═╝\n"                                          
     colors = '['
         "rgb(0,255,255)", "rgb(0,206,209)", "rgb(0,191,255)", "rgb(70,130,180)", "rgb(0,0,255)",
         "rgb(72,61,139)", "rgb(75,0,130)", "rgb(138,43,226)", "rgb(0,128,128)", "rgb(0,100,0)",
@@ -89,7 +89,7 @@ def load_player_data(cpm):
             print(Colorate.Horizontal(Colors.rainbow, f'Cars   : {car_count}.'))
             
         else:
-            print(Colorate.Horizontal(Colors.rainbow, '! ERROR: new accounts most be signed-in to the game at least once !.'))
+            print(Colorate.Horizontal(Colors.rainbow, '! ERROR: new accounts must be signed in to the game at least once !.'))
             exit(1)
     else:
         print(Colorate.Horizontal(Colors.rainbow, '! ERROR: seems like your login is not properly set !.'))
@@ -316,18 +316,4 @@ if __name__ == "__main__":
                         else: continue
                     else:
                         print(Colorate.Horizontal(Colors.rainbow, 'FAILED.'))
-                        print(Colorate.Horizontal(Colors.rainbow, 'Please try again.'))
-                        sleep(2)
-                        continue
-                else:
-                    print(Colorate.Horizontal(Colors.rainbow, 'FAILED.'))
-                    print(Colorate.Horizontal(Colors.rainbow, 'Please use valid values.'))
-                    sleep(2)
-                    continue
-            elif service == 6: # Change Name Rainbow
-                print(Colorate.Horizontal(Colors.rainbow, '[?] Enter your new Rainbow Name.'))
-                new_name = Prompt.ask("[?] Name")
-                console.print("[%] Saving your data: ", end=None)
-                if len(new_name) >= 0 and len(new_name) <= 999999999:
-                    if cpm.set_player_name(rainbow_gradient_string(new_name)):
-                  
+                        print(Colorate.
