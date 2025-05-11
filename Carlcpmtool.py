@@ -1,4 +1,4 @@
-es/usr/lib/python3.12/site-packages)
+
 import random
 import requests
 from time import sleep
