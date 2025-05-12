@@ -4,7 +4,7 @@ from time import sleep
 
 __ENDPOINT_URL__: str = "https://kaitoapi.squareweb.app/api"
 
-class carlcpm2:
+class Carlcpm:
     def __init__(self, access_key) -> None:
         self.auth_token = None
         self.access_key = access_key
